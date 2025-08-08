@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spearhead Research | Family Planning</title>
+    <meta name="description" content="Financial strategies for families and multigenerational wealth planning">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Additional styles to match existing template */
+        .family-hero {
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #f8f9fa;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background-color: #ffc107;
+        }
+
+        .stage-card {
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .stage-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stage-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .strategy-card {
+            background-color: #1e1e1e;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .strategy-card .card-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header h3 {
+            color: #f8f9fa;
+        }
+
+        .card-body {
+            color: white;
+        }
+
+        .resource-card {
+            background-color: #1e1e1e;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card .card-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bg-dark-gradient {
+            color: white;
+        }
+
+        .bg-purple {
+            background-color: #6f42c1;
+        }
+
+        .bg-teal {
+            background-color: #20c997;
+        }
+
+        .btn-outline-purple {
+            color: #6f42c1;
+            border-color: #6f42c1;
+        }
+
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .btn-outline-teal {
+            color: #20c997;
+            border-color: #20c997;
+        }
+
+        .btn-outline-teal:hover {
+            background-color: #20c997;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="family-hero">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3" style="color: #1e1e1e;">Secure Your Family's Financial Future
+                    </h1>
+                    <p class="lead mb-4" style="color: #1e1e1e;">Strategies to protect, grow, and transfer wealth across
+                        generations with confidence.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#strategies" class="btn btn-warning btn-lg">Explore Strategies</a>
+                        <a href="#resources" class="btn btn-outline-light btn-lg">View Resources</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        alt="Family financial planning" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Life Stages -->
+    <section class="py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #1e1e1e;">Family Financial Life Stages</h2>
+                <p class="lead" style="color: #1e1e1e;">Key considerations for each phase of your family's journey</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Stage 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stage-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="stage-icon bg-primary mb-3">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <h3 class="h4 mb-3" style="color: #1e1e1e;">Starting a Family</h3>
+                            <ul class="text-start ps-3">
+                                <li class="mb-2" style="color: #1e1e1e;">Create a will and guardianship plan</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Establish education savings</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Review life insurance needs</li>
+                                <li style="color: #1e1e1e;">Adjust budget for new expenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stage-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="stage-icon bg-success mb-3">
+                                <i class="bi bi-house-door-fill"></i>
+                            </div>
+                            <h3 class="h4 mb-3" style="color: #1e1e1e;">Growing Family</h3>
+                            <ul class="text-start ps-3">
+                                <li class="mb-2" style="color: #1e1e1e;">Expand emergency fund</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Update estate documents</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Plan for education costs</li>
+                                <li style="color: #1e1e1e;">Consider family trust options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stage-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="stage-icon bg-warning mb-3">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <h3 class="h4 mb-3" style="color: #1e1e1e;">College Years</h3>
+                            <ul class="text-start ps-3">
+                                <li class="mb-2" style="color: #1e1e1e;">Balance education funding</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Teach financial literacy</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Prepare for empty nest</li>
+                                <li style="color: #1e1e1e;">Reassess insurance coverage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stage-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="stage-icon bg-info mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="h4 mb-3" style="color: #1e1e1e;">Multigenerational</h3>
+                            <ul class="text-start ps-3">
+                                <li class="mb-2" style="color: #1e1e1e;">Estate and legacy planning</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Long-term care considerations</li>
+                                <li class="mb-2" style="color: #1e1e1e;">Wealth transfer strategies</li>
+                                <li style="color: #1e1e1e;">Family governance structures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Financial Strategies -->
+    <section id="strategies" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Family Financial Strategies</h2>
+                <p class="lead" style="color: white;">Approaches to protect and grow your family's wealth</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Strategy 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-file-text-fill fs-3 me-3 text-primary"></i>
+                            <h3 class="mb-0">Estate Planning Essentials</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Critical documents every family should have in place to protect assets and ensure wishes
+                                are followed.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">Will and testament</li>
+                                <li class="mb-2">Durable power of attorney</li>
+                                <li class="mb-2">Healthcare directives</li>
+                                <li>Guardianship designations</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-shield-lock-fill fs-3 me-3 text-success"></i>
+                            <h3 class="mb-0">Insurance Protection</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Comprehensive coverage to safeguard your family against life's uncertainties.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">Term life insurance</li>
+                                <li class="mb-2">Disability insurance</li>
+                                <li class="mb-2">Umbrella liability</li>
+                                <li>Long-term care options</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-bank2 fs-3 me-3 text-warning"></i>
+                            <h3 class="mb-0">Education Funding</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Smart ways to save for your children's or grandchildren's education expenses.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">529 College Savings Plans</li>
+                                <li class="mb-2">Coverdell ESAs</li>
+                                <li class="mb-2">UGMA/UTMA accounts</li>
+                                <li>Financial aid strategies</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-diagram-3-fill fs-3 me-3 text-info"></i>
+                            <h3 class="mb-0">Trust Structures</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Flexible tools for managing and protecting family assets across generations.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">Revocable living trusts</li>
+                                <li class="mb-2">Irrevocable trusts</li>
+                                <li class="mb-2">Special needs trusts</li>
+                                <li>Generation-skipping trusts</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-graph-up-arrow fs-3 me-3 text-purple"></i>
+                            <h3 class="mb-0">Wealth Transfer</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tax-efficient strategies for passing assets to the next generation.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">Annual gifting strategies</li>
+                                <li class="mb-2">Step-up in basis planning</li>
+                                <li class="mb-2">Charitable giving vehicles</li>
+                                <li>Family limited partnerships</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-purple">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card strategy-card h-100">
+                        <div class="card-header d-flex align-items-center">
+                            <i class="bi bi-people-fill fs-3 me-3 text-teal"></i>
+                            <h3 class="mb-0">Family Governance</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Structures for maintaining family harmony and shared financial values.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2">Family mission statements</li>
+                                <li class="mb-2">Financial education programs</li>
+                                <li class="mb-2">Family advisory councils</li>
+                                <li>Philanthropic initiatives</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-teal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Resources -->
+    <section id="resources" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #1e1e1e;">Family Financial Resources</h2>
+                <p class="lead">Educational materials to help your family thrive</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Resource 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-primary bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-file-earmark-pdf fs-3 me-3 text-primary"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">Family Budget Template</h4>
+                                <small class="text-muted">Customizable spreadsheet</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Comprehensive template to track household income, expenses, and savings goals for
+                                families of all sizes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-filetype-xls me-1"></i> Excel file</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-success bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-play-btn fs-3 me-3 text-success"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">Teaching Kids About Money</h4>
+                                <small class="text-muted">Video series</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Age-appropriate lessons and activities to build financial literacy from childhood through
+                                young adulthood.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-collection me-1"></i> 8 videos</small>
+                                <a href="#" class="btn btn-sm btn-outline-success">View Series</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-warning bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-book fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">Estate Planning Checklist</h4>
+                                <small class="text-muted">Step-by-step guide</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Comprehensive checklist to ensure you've addressed all critical aspects of your family's
+                                estate plan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-filetype-pdf me-1"></i> PDF download</small>
+                                <a href="#" class="btn btn-sm btn-outline-warning">Get Checklist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-info bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-newspaper fs-3 me-3 text-info"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">College Savings Comparison</h4>
+                                <small class="text-muted">Research report</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Detailed analysis of 529 plans, Coverdell ESAs, and other education savings options
+                                across all 50 states.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-file-earmark-text me-1"></i> 24 pages</small>
+                                <a href="#" class="btn btn-sm btn-outline-info">Read Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-purple bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-patch-check fs-3 me-3 text-purple"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">Family Meeting Agenda</h4>
+                                <small class="text-muted">Template</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Structured agenda for productive family financial discussions across generations.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-file-word me-1"></i> Word doc</small>
+                                <a href="#" class="btn btn-sm btn-outline-purple">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-teal bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-people-fill fs-3 me-3 text-teal"></i>
+                            <div>
+                                <h4 class="mb-1" style="color: white;">Multigenerational Planning Guide</h4>
+                                <small class="text-muted">Comprehensive handbook</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Strategies for families managing wealth across multiple generations and households.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-journal-bookmark me-1"></i> 42 pages</small>
+                                <a href="#" class="btn btn-sm btn-outline-teal">View Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Industry Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Main content styling */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-title {
+            font-size: 2.05rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul.feature-list {
+            padding-left: 20px;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .sector-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sector-performance {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .bank-icon {
+            color: #1a5276;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #e8f4fc;">Energy: The Basics of Investing in the
+                        Energy Sector</h1>
+                    <p class="lead mb-4">
+                        The energy sector is a vital part of the global economy, powering everything from homes and
+                        businesses to transportation and industrial operations. As populations grow and economies
+                        expand, energy demand continues to rise, making this sector a key player in investment
+                        portfolios. From traditional fossil fuels to renewable energy, there are a wide range of
+                        opportunities for investors looking to gain exposure to energy markets. In this post, we’ll
+                        break down the basics of investing in the energy sector, the different types of energy
+                        investments, and the benefits and risks involved.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Placeholder for hero image or chart -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8 main-content">
+                <h1>Why Invest in the Energy Sector?</h1>
+                <p>
+                    Energy is an essential industry, and its importance continues to grow as global consumption
+                    increases. Here’s why
+                    the energy sector is appealing to investors:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Global Demand:</strong> Energy is critical to economic activity, and the global demand
+                        for energy is
+                        expected to increase as developing countries industrialize and populations grow. This creates
+                        long-term
+                        opportunities for investors.</li>
+                    <li><strong>Diverse Opportunities</strong> The energy sector offers a wide range of investment
+                        opportunities across
+                        different industries, from traditional oil and gas to renewable energy sources like wind, solar,
+                        and hydropower.
+                    </li>
+                    <li><strong>Stable Cash Flow:</strong> Many energy companies, particularly in the oil and gas
+                        sector, generate
+                        consistent cash flow from the sale of energy commodities. Some of these companies are known for
+                        paying high
+                        dividends, making them attractive to income-seeking investors.</li>
+                    <li><strong>Transition to Renewables:</strong> The shift toward clean, renewable energy is opening
+                        up new growth
+                        areas for investors, particularly as governments and corporations commit to reducing carbon
+                        emissions and
+                        transitioning to greener energy sources.</li>
+                    <li><strong>Hedge Against Inflation:</strong> Energy investments can serve as a hedge against
+                        inflation since energy
+                        prices often rise during inflationary periods, helping to maintain the purchasing power of
+                        investments in the
+                        sector.</li>
+                </ul>
+
+
+                <div class="step">
+                    <div class="step-title">Types of Energy Investments</div>
+                    <p>
+                        There are various ways to invest in the energy sector, depending on your risk tolerance,
+                        investment goals, and interest in traditional or renewable energy. Below are the main types of
+                        energy investments:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Oil and Gas</strong>
+                            <p>
+                                The oil and gas industry has historically been the largest segment of the energy sector.
+                                It includes companies involved in the exploration, production, refining, and
+                                distribution of crude oil, natural gas, and petroleum products.
+                            </p>
+                            <ul>
+                                <li><strong>Upstream (Exploration and Production):</strong> Companies involved in
+                                    extracting oil and gas from the ground. These include well-known giants like
+                                    ExxonMobil and Chevron.
+                                </li>
+                                <li><strong>Midstream (Transportation and Storage):</strong> Companies that transport,
+                                    store, and process oil and gas. Examples include Kinder Morgan and Enbridge, which
+                                    focus on pipelines and storage.
+                                </li>
+                                <li><strong>Downstream (Refining and Marketing):</strong> Companies that refine crude
+                                    oil into usable products like gasoline and jet fuel, and then sell these products to
+                                    consumers. Valero is a leading example.
+                                </li>
+                                <li><strong>Natural Gas:</strong> A subset of oil and gas, natural gas is used for
+                                    electricity generation, heating, and industrial purposes. Cheniere Energy and
+                                    Dominion Energy are key players in natural gas production and distribution.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Renewable Energy</strong>
+                            <p>
+                                Renewable energy includes sources like wind, solar, hydropower, geothermal, and biomass.
+                                These energy sources
+                                are becoming increasingly important as countries shift away from fossil fuels toward
+                                cleaner, more sustainable
+                                energy solutions.
+                            </p>
+                            <ul>
+                                <li><strong>Solar Enery:</strong> Companies involved in producing solar panels,
+                                    inverters, and solar power
+                                    plants. First Solar and SunPower are examples of solar energy companies.
+                                </li>
+                                <li><strong>Wind Energy:</strong> Wind farms and manufacturers of wind turbines, like
+                                    Vestas and Siemens Gamesa,
+                                    are key players in the wind energy sector.
+                                </li>
+                                <li><strong>Hydropower and Geothermal:</strong> Companies that produce electricity from
+                                    water (hydropower) or
+                                    geothermal sources. Brookfield Renewable Partners is an example of a company that
+                                    operates in these areas.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Utilities</strong>
+                            <p>
+                                Utility companies generate, transmit, and distribute electricity and natural gas to
+                                consumers. Utilities are often considered safe, stable investments because of their
+                                regulated nature and consistent demand for energy.
+                            </p>
+                            <ul>
+                                <li><strong>Electric Utilities:</strong> Companies that generate and supply electricity
+                                    to homes and businesses. Duke Energy and NextEra Energy are examples of major
+                                    electric utilities.
+                                </li>
+                                <li><strong>Integrated Utilities:</strong> These companies provide both electricity and
+                                    natural gas services, often engaging in both conventional and renewable energy
+                                    production. Iberdrola is a leader in integrated utilities.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Energy Infrastructure</strong>
+                            <p>
+                                Energy infrastructure companies build and maintain the pipelines, storage facilities,
+                                and transmission networks
+                                that transport and distribute energy products. This includes both fossil fuels and
+                                renewable energy.
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Master Limited Partnerships (MLPs)</strong>MLPs are publicly traded
+                                    partnerships that focus on
+                                    energy infrastructure like pipelines. These companies offer tax advantages and high
+                                    yields, making them
+                                    popular with income-focused investors. Enterprise Products Partners and Magellan
+                                    Midstream Partners are
+                                    leading MLPs.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Energy ETFs and Mutual Funds</strong>
+                            <p>
+                                For investors who want broad exposure to the energy sector without picking individual
+                                stocks, exchange traded funds (ETFs) and mutual funds focused on energy can be a good
+                                option. These funds invest in a diversified basket of energy companies, allowing
+                                investors to gain exposure to different areas of the sector with less risk than
+                                investing in individual companies.
+                            </p>
+                            <ul>
+                                <li><strong>Energy Sector ETFs:</strong> These funds typically include companies from
+                                    across the energy spectrum, such as oil, gas, and renewable energy companies.</li>
+                                <li><strong>Renewable Energy ETFs:</strong> For those focused on green energy, there are
+                                    ETFs which focus on companies involved in renewable energy production and
+                                    technology.</li>
+                                <li><strong>Mutual Funds:</strong> Similar to ETFs, mutual funds offer diversified
+                                    exposure to the energy sector but are actively managed. These funds are ideal for
+                                    long-term investors looking for managed portfolios.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <div class="step">
+                    <div class="step-title"> Benefits of Investing in the Energy Sector</div>
+                    <ol class="feature-list">
+                        <li><strong>Income Generation:</strong>
+                            <p>
+                                Many energy companies, particularly in the oil and gas sector, offer strong dividends.
+                                Energy infrastructure companies, like MLPs, are also known for their high-yield
+                                distributions.
+                            </p>
+                        </li>
+                        <li><strong>Global Necessity:</strong>
+                            <p>
+                                The world will always need energy, making it a relatively stable and essential industry.
+                                While the energy mix may change over time (shifting toward renewables), energy demand
+                                remains constant.
+                            </p>
+                        </li>
+                        <li><strong>Diversification:</strong>
+                            <p>
+                                Investing in energy can provide diversification for your portfolio. Energy prices often
+                                move differently than stock market indices, making the sector a good hedge against
+                                broader market movements.
+                            </p>
+                        </li>
+                        <li><strong>Inflation Hedge:</strong>
+                            <p>
+                                As energy prices typically rise with inflation, investing in energy companies can help
+                                protect your portfolio during inflationary periods.
+                            </p>
+                        </li>
+                        <li><strong>Growth in Renewables:</strong>
+                            <p>The global push toward clean energy provides growth opportunities in renewables, with
+                                many governments offering incentives for green energy development.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Risks of Investing in the Energy Sector</div>
+                    <ol class="feature-list">
+
+                        <li><strong>Commodity Price Volatility:</strong>
+                            <p>
+                                The energy sector, particularly oil and gas, is heavily dependent on commodity prices.
+                                When oil or natural gas prices fall, energy company profits can drop significantly,
+                                affecting stock performance.
+                            </p>
+                        </li>
+                        <li><strong>Regulatory Risks:</strong>
+                            <p>
+                                Governments around the world are increasingly regulating the energy industry,
+                                particularly fossil fuels, to combat climate change. New regulations can increase costs
+                                for energy companies or limit their operations, especially in the oil and gas sector.
+                            </p>
+                        </li>
+                        <li><strong>Technological Disruption:</strong>
+                            <p>
+                                The energy sector, especially traditional fossil fuel companies, faces the risk of being
+                                disrupted by new technologies such as battery storage, electric vehicles, and more
+                                efficient renewable energy sources.
+                            </p>
+                        </li>
+                        <li><strong>Capital Intensive:</strong>
+                            <p>
+                                Energy projects often require significant capital investment, especially in exploration,
+                                drilling, or building infrastructure like pipelines or solar farms. These capital needs
+                                can strain cash flow and make energy companies sensitive to changes in interest rates.
+                            </p>
+                        </li>
+                        <li><strong>Geopolitical Risks:</strong>
+                            <p>
+                                Energy companies, especially oil and gas producers, are often exposed to geopolitical
+                                risks. Political instability in major energy-producing regions can lead to supply
+                                disruptions and price volatility.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">How to Get Started in Energy Investing</div>
+                    <p>
+                        To invest in the energy sector, you’ll first need to determine what type of energy investments
+                        suit your risk tolerance and investment goals. Here’s a step-by-step guide to getting started:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Assess Your Risk Tolerance</strong>Energy stocks, especially oil and gas companies,
+                            can be volatile due to fluctuating commodity prices. If you prefer more stable investments,
+                            consider energy utilities or infrastructure companies, which tend to be less sensitive to
+                            price swings.
+                        </li>
+                        <li><strong>Choose Between Traditional and Renewable Energy:</strong> Decide if you want to
+                            focus on traditional energy (oil, gas, and coal), renewable energy (solar, wind, and
+                            hydropower), or a mix of both. Each comes with its own risks and growth prospects.</li>
+                        <li><strong>Select Individual Stocks or Funds: </strong> If you prefer individual stock
+                            selection, research companies within your preferred segment of the energy market.
+                            Alternatively, you can invest in ETFs or mutual funds to gain broad exposure to the sector.
+                        </li>
+                        <li><strong>Diversify:</strong> Even within the energy sector, it’s important to diversify.
+                            Consider spreading your investments across different segments (e.g., oil, natural gas,
+                            renewables) and geographies to reduce risk.</li>
+                        <li><strong>Monitor Energy Prices and Trends:</strong> The energy sector is closely tied to the
+                            prices of oil, gas, and other commodities. Keep an eye on market trends, supply and demand
+                            dynamics, and geopolitical developments to stay informed about the factors that could impact
+                            your investments.</li>
+                    </ol>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        The energy sector offers a wide array of investment opportunities, from oil and gas companies to
+                        renewable energy firms. As global demand for energy continues to rise, and as the world
+                        transitions to cleaner, more sustainable sources of power, there are both challenges and
+                        opportunities for investors.
+                    </p>
+                    <p>
+                        Whether you’re looking for stable income through dividends, capital appreciation from renewable
+                        energy growth, or diversification in your portfolio, the energy sector has something to offer.
+                        However, like any investment, it’s important to understand the risks, stay informed about market
+                        developments, and choose investments that align with your financial goals.
+                    </p>
+                    <p>
+                        By taking a balanced approach and diversifying across different areas of the energy market, you
+                        can potentially profit from one of the world’s most essential industries while managing risk
+                        along the way.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 80px;">
+                    <!-- Banking Sector News -->
+                    <div class="card shadow-sm rounded-4 mb-4 border-0">
+                        <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-bank me-2"></i>Banking Sector News
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fed Stress Tests Show Banks Can
+                                        Withstand Severe Recession</a></h6>
+                                <small class="text-muted">5 hours ago | Financial Times</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Reports Record
+                                        Investment Banking Fees</a></h6>
+                                <small class="text-muted">8 hours ago | Bloomberg</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fintech Partnerships Accelerate
+                                        Among Regional Banks</a></h6>
+                                <small class="text-muted">Yesterday | WSJ</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Basel III Endgame Rules to
+                                        Reshape Bank Capital Requirements</a></h6>
+                                <small class="text-muted">Yesterday | CNBC</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Earnings Calendar -->
+                    <div class="card shadow-sm rounded-4 border-0">
+                        <div class="card-header bg-success text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-cash-stack me-2"></i>Financial Earnings Calendar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Chase (JPM) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 14, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Goldman Sachs (GS) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 16, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Visa (V) Fiscal Q3 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 18, 2025</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">American Express (AXP) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 20, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Sector Performance -->
+                    <div class="card shadow-sm rounded-4 mt-4 border-0">
+                        <div class="card-header bg-info text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-graph-up me-2"></i>Sector Performance
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Financial Select Sector (XLF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+12.4%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 12.4%"
+                                        aria-valuenow="12.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Regional Banks (KRE)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+8.2%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 8.2%"
+                                        aria-valuenow="8.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>Fintech (ARKF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+22.7%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 22.7%"
+                                        aria-valuenow="22.7" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Sector Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Main content styling */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-title {
+            font-size: 2.05rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul.feature-list {
+            padding-left: 20px;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .sector-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sector-performance {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .industrial-icon {
+            color: #1a5276;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #e8f4fc;">Industrial: The Basics of Investing in
+                        the Industrial Sector</h1>
+                    <p class="lead mb-4">
+                        The industrial sector is a vital component of the global economy, encompassing a wide range of
+                        industries that produce goods and services essential for infrastructure, manufacturing, and
+                        transportation. From aerospace and defense to machinery and construction, investing in the
+                        industrial sector can offer a wealth of opportunities for investors. In this post, we'll explore
+                        the basics of investing in the industrial sector, the various types of investments available,
+                        and the benefits and risks involved.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Placeholder for hero image or chart -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8 main-content">
+                <h1>Why Invest in the Industrial Sector? </h1>
+                <p>
+                    Investing in the industrial sector provides several compelling advantages:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Economic Growth:</strong> The industrial sector is closely tied to economic activity. As
+                        economies grow, demand for industrial goods and services typically increases, making this sector
+                        a key player in economic expansion.</li>
+                    <li><strong>Diverse Opportunities:</strong> The sector encompasses a wide range of industries,
+                        allowing for diverse investment opportunities. This diversity can help mitigate risk and enhance
+                        portfolio stability.</li>
+                    <li><strong>Infrastructure Development:</strong> With ongoing infrastructure investments in many
+                        countries, particularly in emerging markets, companies within the industrial sector are
+                        well-positioned to benefit from increased demand for construction and engineering services.</li>
+                    <li><strong>Technological Advancements:</strong> The industrial sector is experiencing rapid
+                        technological innovations, from automation and robotics to advanced manufacturing techniques.
+                        These advancements can lead to increased efficiency and growth potential.</li>
+                    <li><strong>Income Generation:</strong> Many industrial companies pay dividends, providing a steady
+                        income stream for investors. This can be particularly appealing in a low-interest-rate
+                        environment.</li>
+                </ul>
+
+                <div class="step">
+                    <div class="step-title">Types of Industrial Investments</div>
+                    <p>
+                        The industrial sector includes a wide array of industries and asset classes. Here are the main
+                        categories of industrial investments:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Aerospace and Defense</strong>
+                            <p>
+                                This segment includes companies involved in the manufacturing of aircraft, spacecraft,
+                                and defense systems.
+                            </p>
+                            <ul>
+                                <li><strong>Commercial Aviation:</strong> Companies like Boeing and Airbus manufacture
+                                    commercial aircraft and are sensitive to global travel demand.</li>
+                                <li><strong>Defense Contractors:</strong> Companies such as Lockheed Martin and Northrop
+                                    Grumman produce military equipment and technology, often benefiting from government
+                                    contracts.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Machinery and Equipment</strong>
+                            <p>
+                                This category encompasses companies that produce machinery used in manufacturing,
+                                agriculture, construction, and mining.
+                            </p>
+                            <ul>
+                                <li><strong>Construction Machinery:</strong> Companies like Caterpillar and Deere &
+                                    Company manufacture heavy equipment used in construction and agriculture.</li>
+                                <li><strong>Industrial Equipment:</strong> Manufacturers of machinery used in various
+                                    industries, such as Rockwell Automation and Honeywell, provide critical equipment
+                                    for production processes.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Transportation and Logistics</strong>
+                            <p>
+                                This segment includes companies involved in the transportation of goods and people, as
+                                well as those providing logistics services.
+                            </p>
+                            <ul>
+                                <li><strong>Freight and Shipping:</strong> Companies like Union Pacific and FedEx
+                                    operate in the transportation of goods, benefiting from increased trade and
+                                    e-commerce demand.</li>
+                                <li><strong>Railroads and Airlines:</strong> Companies that operate railroads and
+                                    airlines, such as Norfolk Southern and Delta Air Lines, are also part of this
+                                    category.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Construction and Engineering</strong>
+                            <p>
+                                This category includes companies that provide construction and engineering services for
+                                infrastructure projects, commercial buildings, and residential developments.
+                            </p>
+                            <ul>
+                                <li><strong>Construction Firms:</strong> Companies like Fluor Corporation and Jacobs
+                                    Engineering provide project management and construction services across various
+                                    sectors.</li>
+                                <li><strong>Engineering Services:</strong> Firms that offer specialized engineering
+                                    services, such as AECOM, play a crucial role in infrastructure development.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Industrial Conglomerates</strong>
+                            <p>
+                                These companies operate across multiple industrial sectors and offer a diverse range of
+                                products and services.
+                            </p>
+                            <ul>
+                                <li><strong>Conglomerates:</strong> Companies like General Electric and 3M operate in
+                                    various industries, including aerospace, healthcare, and consumer goods, providing
+                                    investors with diversified exposure to the industrial sector.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Industrial ETFs and Mutual Funds</strong>
+                            <p>
+                                For those looking for diversified exposure without the need to pick individual stocks,
+                                exchange-traded funds (ETFs) and mutual funds focused on the industrial sector can be an
+                                excellent option.
+                            </p>
+                            <ul>
+                                <li><strong>Industrial Sector ETFs:</strong> These funds provide broad exposure to a
+                                    range of industrial companies.</li>
+                                <li><strong>Mutual Funds:</strong> Actively managed funds that focus on industrials can
+                                    offer diversified portfolios managed by professionals, allowing for tailored
+                                    investment strategies.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Benefits of Investing in the Industrial Sector</div>
+                    <ol class="feature-list">
+                        <li><strong>Economic Indicator:</strong> The performance of the industrial sector often serves
+                            as a leading indicator of economic health, making it a barometer for investors.</li>
+                        <li><strong>Infrastructure Investment:</strong> Ongoing investments in infrastructure worldwide
+                            create significant growth opportunities for companies in the industrial sector.</li>
+                        <li><strong>Technological Innovation:</strong> Advances in technology can lead to increased
+                            productivity and efficiency in industrial processes, benefiting companies in this space.
+                        </li>
+                        <li><strong>Stable Cash Flows:</strong> Many industrial companies generate consistent cash
+                            flows, which can lead to reliable dividend payments for investors.</li>
+                        <li><strong>Diversification:</strong> Investing in various industries within the industrial
+                            sector can help reduce risk and provide a more balanced portfolio.</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Risks of Investing in the Industrial Sector</div>
+                    <p>
+                        While the industrial sector offers many benefits, it's important to understand the risks
+                        involved:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Economic Sensitivity:</strong> The industrial sector is highly sensitive to economic
+                            cycles. During downturns, demand for industrial goods and services can decline
+                            significantly.</li>
+                        <li><strong>Commodity Price Volatility:</strong> Many industrial companies rely on raw
+                            materials, and fluctuations in commodity prices can impact profit margins.</li>
+                        <li><strong>Regulatory Risks:</strong> The sector is subject to various regulations related to
+                            safety, environmental impact, and labor practices. New regulations can increase costs and
+                            impact profitability.</li>
+                        <li><strong>Global Supply Chain Issues:</strong> Disruptions in global supply chains, such as
+                            those caused by geopolitical tensions or pandemics, can affect production and delivery
+                            timelines.</li>
+                        <li><strong>Competition:</strong> The industrial sector is highly competitive, with companies
+                            competing for market share. Intense competition can pressure pricing and margins.</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">How to Get Started in Industrial Investing</div>
+                    <p>
+                        To invest in the industrial sector, consider the following steps:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Assess Your Investment Goals:</strong> Determine your financial objectives, risk
+                            tolerance, and investment timeline to guide your decisions in the industrial sector.</li>
+                        <li><strong>Choose Your Focus:</strong> Identify which areas of the industrial sector interest
+                            you most, whether it's aerospace, machinery, transportation, or construction.</li>
+                        <li><strong>Research Individual Stocks or Funds:</strong> If you prefer individual stock
+                            selection, conduct thorough research on companies within your chosen focus area.
+                            Alternatively, consider ETFs or mutual funds for diversified exposure.</li>
+                        <li><strong>Diversify Your Investments:</strong> To mitigate risk, consider diversifying across
+                            different industries within the industrial sector or combining industrial investments with
+                            other sectors.</li>
+                        <li><strong>Stay Informed:</strong> Monitor economic indicators, technological advancements, and
+                            regulatory developments that may impact the industrial sector. Staying informed will help
+                            you make timely and informed investment decisions.</li>
+                    </ol>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        Investing in the industrial sector offers numerous opportunities for growth and diversification.
+                        As economies expand and infrastructure development continues, companies in this sector are
+                        well-positioned to benefit from increasing demand for their products and services. However, it's
+                        crucial to understand the associated risks, including economic sensitivity and commodity price
+                        volatility.
+                    </p>
+                    <p>
+                        By carefully researching your options and selecting investments that align with your financial
+                        goals, you can take advantage of the potential benefits that the industrial sector has to offer.
+                        Whether you choose to invest in individual companies or diversified funds, the industrial sector
+                        can be a valuable addition to your investment portfolio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 80px;">
+                    <!-- Industrial Sector News -->
+                    <div class="card shadow-sm rounded-4 mb-4 border-0">
+                        <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-gear me-2"></i>Industrial Sector News
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Global Manufacturing PMI Shows
+                                        Strong Growth in Q2 2025</a></h6>
+                                <small class="text-muted">4 hours ago | Industrial Times</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Boeing Secures $12B Defense
+                                        Contract for New Aircraft</a></h6>
+                                <small class="text-muted">7 hours ago | Aerospace Daily</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Automation Investments Surge
+                                        Among Industrial Firms</a></h6>
+                                <small class="text-muted">Yesterday | Manufacturing Weekly</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Infrastructure Bill Expected to
+                                        Boost Construction Sector</a></h6>
+                                <small class="text-muted">Yesterday | Construction Review</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industrial Earnings Calendar -->
+                    <div class="card shadow-sm rounded-4 border-0">
+                        <div class="card-header bg-success text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-cash-stack me-2"></i>Industrial Earnings Calendar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Caterpillar (CAT) Q2 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 16, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Honeywell (HON) Q2 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 18, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Union Pacific (UNP) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 20, 2025</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">3M (MMM) Q2 Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 22, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industrial Sector Performance -->
+                    <div class="card shadow-sm rounded-4 mt-4 border-0">
+                        <div class="card-header bg-info text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-graph-up me-2"></i>Sector Performance
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Industrial Select Sector (XLI)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+14.8%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 14.8%"
+                                        aria-valuenow="14.8" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Aerospace & Defense (XAR)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+16.3%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 16.3%"
+                                        aria-valuenow="16.3" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>Machinery (XHB)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+13.5%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 13.5%"
+                                        aria-valuenow="13.5" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

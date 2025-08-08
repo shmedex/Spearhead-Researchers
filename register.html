@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spearhead Research | Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Updated Login Form Styles */
+
+        .auth-container {
+            max-width: 420px;
+            margin: 6rem auto;
+            padding: 2.5rem 3rem;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: transform 0.3s ease;
+        }
+
+        .auth-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .auth-card {
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        .auth-header {
+            background: transparent;
+            padding-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #e1e8f0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .auth-header i {
+            font-size: 1.6rem;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+
+        .auth-body {
+            padding: 0;
+        }
+
+
+
+        .auth-footer {
+            background: transparent;
+            color: #b0b8c1;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-top: 1.75rem;
+        }
+
+        .auth-footer a {
+            color: #7ac1ff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        .auth-footer a:hover {
+            color: #a5d8ff;
+        }
+
+        .btn-auth {
+            background: #3a72f8;
+            border-radius: 12px;
+            border: none;
+            padding: 0.85rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fff;
+            box-shadow: 0 8px 15px rgba(58, 114, 248, 0.4);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-auth:hover,
+        .btn-auth:focus {
+            background: #1e52d4;
+            box-shadow: 0 12px 20px rgba(30, 82, 212, 0.6);
+            outline: none;
+        }
+
+        .auth-divider {
+            color: #a2b1c6;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 2rem 0 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-divider::before,
+        .auth-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #364a6e;
+        }
+
+        .auth-divider::before {
+            margin-right: 1rem;
+        }
+
+        .auth-divider::after {
+            margin-left: 1rem;
+        }
+
+        .btn-outline-primary {
+            border-radius: 12px;
+            border-color: #5078c1;
+            color: #a8b9dc;
+            font-weight: 600;
+            padding: 0.6rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-outline-primary i {
+            font-size: 1.1rem;
+            vertical-align: middle;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #3a72f8;
+            border-color: #3a72f8;
+            color: #fff;
+        }
+
+        .d-flex.justify-content-between.mb-3 {
+            color: #c0c9dc;
+            font-size: 0.95rem;
+        }
+
+        .d-flex.justify-content-between.mb-3 a {
+            color: #7ac1ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .d-flex.justify-content-between.mb-3 a:hover {
+            color: #a5d8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Registration Form -->
+    <div class="container auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h3><i class="bi bi-person-plus me-2"></i>Create Account</h3>
+            </div>
+            <div class="auth-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Create a password"
+                            required>
+                        <div class="password-strength mt-2">
+                            <div class="password-strength-bar" id="passwordStrength"></div>
+                        </div>
+                        <small class="text-muted">Use 8 or more characters with a mix of letters, numbers &
+                            symbols</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword"
+                            placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#"
+                                class="text-primary">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-auth">Create Account</button>
+
+                    <div class="auth-divider">or</div>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-google me-2"></i>Continue with Google
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-microsoft me-2"></i>Continue with Microsoft
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="auth-footer">
+                Already have an account? <a href="login.html" class="text-primary">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

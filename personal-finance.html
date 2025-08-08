@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spearhead Research | Personal Finance</title>
+    <meta name="description" content="Personal finance tools, calculators, and advice">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Additional styles to match existing template */
+        .personal-finance-hero {
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #f8f9fa;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background-color: #ffc107;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .resource-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            overflow: hidden;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .resource-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .resource-img .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section personal-finance-hero">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Take Control of Your Financial Future</h1>
+                    <p class="lead mb-4">Expert guidance and powerful tools to help you budget, save, invest, and grow
+                        your wealth.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#calculators" class="btn btn-warning btn-lg">Try Our Calculators</a>
+                        <a href="#resources" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        alt="Personal Finance" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Health Check -->
+    <section class="py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #121212;">Financial Health Check</h2>
+                <p class="lead">Answer a few questions to get personalized recommendations</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-primary mb-3 mx-auto">
+                                <i class="bi bi-cash-coin fs-3"></i>
+                            </div>
+                            <h3>Income</h3>
+                            <p>Evaluate your earnings and growth potential</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Assess</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-success mb-3 mx-auto">
+                                <i class="bi bi-pie-chart fs-3"></i>
+                            </div>
+                            <h3>Expenses</h3>
+                            <p>Analyze your spending habits</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Review</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-warning mb-3 mx-auto">
+                                <i class="bi bi-graph-up-arrow fs-3"></i>
+                            </div>
+                            <h3>Investments</h3>
+                            <p>Check your portfolio performance</p>
+                            <a href="#" class="btn btn-sm btn-outline-warning">Evaluate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Calculators -->
+    <section id="calculators" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Financial Calculators</h2>
+                <p class="lead">Plan your financial future with our interactive tools</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Budget Calculator -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-primary bg-opacity-25">
+                            <h3 class="mb-0"><i class="bi bi-wallet2 me-2"></i> Budget Calculator</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="budgetCalculator">
+                                <div class="mb-3">
+                                    <label for="monthlyIncome" class="form-label">Monthly Income</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="monthlyIncome" placeholder="5000"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="monthlyExpenses" class="form-label">Monthly Expenses</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="monthlyExpenses"
+                                            placeholder="3500" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="savingsGoal" class="form-label">Monthly Savings Goal (%)</label>
+                                    <input type="range" class="form-range" id="savingsGoal" min="5" max="50" step="5"
+                                        value="20">
+                                    <div class="d-flex justify-content-between">
+                                        <small>5%</small>
+                                        <small id="savingsGoalValue">20%</small>
+                                        <small>50%</small>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Calculate</button>
+                            </form>
+                        </div>
+                        <div class="card-footer bg-transparent" id="budgetResults" style="display: none;">
+                            <h5 class="mb-3">Your Budget Breakdown</h5>
+                            <div class="progress mb-2" style="height: 25px;">
+                                <div class="progress-bar bg-success" role="progressbar" id="savingsBar"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" id="expensesBar"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <small>Savings: <span id="savingsAmount">$0</span></small>
+                                <small>Expenses: <span id="expensesAmount">$0</span></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Retirement Calculator -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-warning bg-opacity-25">
+                            <h3 class="mb-0"><i class="bi bi-umbrella me-2"></i> Retirement Calculator</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="retirementCalculator">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="currentAge" class="form-label">Current Age</label>
+                                        <input type="number" class="form-control" id="currentAge" placeholder="30"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="retirementAge" class="form-label">Retirement Age</label>
+                                        <input type="number" class="form-control" id="retirementAge" placeholder="65"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="currentSavings" class="form-label">Current Retirement Savings</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="currentSavings"
+                                            placeholder="50000" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="monthlyContribution" class="form-label">Monthly Contribution</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="monthlyContribution"
+                                            placeholder="500" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="expectedReturn" class="form-label">Expected Annual Return (%)</label>
+                                    <input type="range" class="form-range" id="expectedReturn" min="2" max="12"
+                                        step="0.5" value="6">
+                                    <div class="d-flex justify-content-between">
+                                        <small>2%</small>
+                                        <small id="expectedReturnValue">6%</small>
+                                        <small>12%</small>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Calculate</button>
+                            </form>
+                        </div>
+                        <div class="card-footer bg-transparent" id="retirementResults" style="display: none;">
+                            <h5 class="mb-3">Retirement Projection</h5>
+                            <div class="mb-2">
+                                <small>Years to Retirement: <span id="yearsToRetirement">0</span></small>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-info" role="progressbar" id="yearsProgress"></div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <small>Projected Savings: <span id="projectedSavings">$0</span></small>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-success" role="progressbar" id="savingsProgress"></div>
+                                </div>
+                            </div>
+                            <small class="text-muted">Note: This is an estimate and doesn't account for inflation or
+                                taxes.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Resources -->
+    <section id="resources" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Financial Resources</h2>
+                <p class="lead">Learn how to manage your money effectively</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Budgeting Guide -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-img-top resource-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');">
+                            <span class="badge bg-primary">Guide</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">The Complete Budgeting Guide</h3>
+                            <p class="card-text">Learn how to create and stick to a budget that works for your lifestyle
+                                and financial goals.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 15 min read</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Debt Management -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-img-top resource-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');">
+                            <span class="badge bg-success">Video</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Debt Management Strategies</h3>
+                            <p class="card-text">Explore proven methods to pay down debt faster and save on interest
+                                payments.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 22 min video</small>
+                                <a href="#" class="btn btn-sm btn-outline-success">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investing Basics -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-img-top resource-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1468254095679-bbcba94a7066?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');">
+                            <span class="badge bg-warning">Course</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Investing for Beginners</h3>
+                            <p class="card-text">Start building wealth with our step-by-step guide to investing in
+                                stocks, bonds, and funds.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 8 lessons</small>
+                                <a href="#" class="btn btn-sm btn-outline-warning">Start Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Get Personal Finance Tips Delivered to Your Inbox</h2>
+                    <p class="lead mb-4">Subscribe to our weekly newsletter for expert advice, market updates, and
+                        exclusive content.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input type="email" class="form-control form-control-lg"
+                                    placeholder="Your email address" required>
+                                <button class="btn btn-warning" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <small class="text-muted">We'll never share your email. Unsubscribe anytime.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Budget Calculator
+        document.getElementById('savingsGoal').addEventListener('input', function () {
+            document.getElementById('savingsGoalValue').textContent = this.value + '%';
+        });
+
+        document.getElementById('expectedReturn').addEventListener('input', function () {
+            document.getElementById('expectedReturnValue').textContent = this.value + '%';
+        });
+
+        document.getElementById('budgetCalculator').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const income = parseFloat(document.getElementById('monthlyIncome').value);
+            const expenses = parseFloat(document.getElementById('monthlyExpenses').value);
+            const savingsGoal = parseInt(document.getElementById('savingsGoal').value) / 100;
+
+            const targetSavings = income * savingsGoal;
+            const remainingAfterSavings = income - targetSavings;
+            const expensePercentage = expenses / remainingAfterSavings * 100;
+
+            document.getElementById('savingsAmount').textContent = '$' + targetSavings.toFixed(2);
+            document.getElementById('expensesAmount').textContent = '$' + expenses.toFixed(2);
+
+            document.getElementById('savingsBar').style.width = (savingsGoal * 100) + '%';
+            document.getElementById('savingsBar').setAttribute('aria-valuenow', savingsGoal * 100);
+            document.getElementById('savingsBar').textContent = (savingsGoal * 100).toFixed(0) + '% Savings';
+
+            document.getElementById('expensesBar').style.width = expensePercentage + '%';
+            document.getElementById('expensesBar').setAttribute('aria-valuenow', expensePercentage);
+            document.getElementById('expensesBar').textContent = expensePercentage.toFixed(0) + '% Expenses';
+
+            document.getElementById('budgetResults').style.display = 'block';
+        });
+
+        // Retirement Calculator
+        document.getElementById('retirementCalculator').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const currentAge = parseInt(document.getElementById('currentAge').value);
+            const retirementAge = parseInt(document.getElementById('retirementAge').value);
+            const currentSavings = parseFloat(document.getElementById('currentSavings').value);
+            const monthlyContribution = parseFloat(document.getElementById('monthlyContribution').value);
+            const expectedReturn = parseFloat(document.getElementById('expectedReturn').value) / 100;
+
+            const yearsToRetirement = retirementAge - currentAge;
+            const monthsToRetirement = yearsToRetirement * 12;
+            const monthlyRate = expectedReturn / 12;
+
+            // Future value calculation
+            let futureValue = currentSavings * Math.pow(1 + monthlyRate, monthsToRetirement);
+            futureValue += monthlyContribution * (Math.pow(1 + monthlyRate, monthsToRetirement) - 1) / monthlyRate;
+
+            document.getElementById('yearsToRetirement').textContent = yearsToRetirement;
+            document.getElementById('yearsProgress').style.width = '100%';
+            document.getElementById('yearsProgress').setAttribute('aria-valuenow', 100);
+
+            // Simple visualization for savings growth
+            const savingsProgress = Math.min(100, (currentSavings / (futureValue * 0.5))) * 100;
+            document.getElementById('savingsProgress').style.width = savingsProgress + '%';
+            document.getElementById('savingsProgress').setAttribute('aria-valuenow', savingsProgress);
+
+            document.getElementById('projectedSavings').textContent = '$' + futureValue.toFixed(2);
+            document.getElementById('retirementResults').style.display = 'block';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

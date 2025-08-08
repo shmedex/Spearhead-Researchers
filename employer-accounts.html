@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spearhead Research | Employer Accounts</title>
+    <meta name="description" content="Comprehensive financial solutions for employers and businesses">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Additional styles to match existing template */
+        .employer-hero {
+            color: black;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #f8f9fa;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background-color: #ffc107;
+        }
+
+        .solution-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background-color: #1e1e1e;
+            color: #f8f9fa;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .solution-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .resource-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background-color: #1e1e1e;
+            color: #f8f9fa;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .resource-card .card-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-dark-gradient {
+            color: white;
+        }
+
+        .bg-purple {
+            background-color: #6f42c1;
+        }
+
+        .bg-teal {
+            background-color: #20c997;
+        }
+
+        .btn-outline-purple {
+            color: #6f42c1;
+            border-color: #6f42c1;
+        }
+
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .btn-outline-teal {
+            color: #20c997;
+            border-color: #20c997;
+        }
+
+        .btn-outline-teal:hover {
+            background-color: #20c997;
+            color: white;
+        }
+
+
+
+        .form-control {
+            background-color: grey;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-control:focus {
+            background-color: #343a40;
+            color: white;
+            border-color: #ffc107;
+            box-shadow: none;
+        }
+
+        .form-check-input:checked {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .form-check-input:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+        }
+
+        .btn-outline-light {
+            color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="employer-hero">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Comprehensive Financial Solutions for Employers</h1>
+                    <p class="lead mb-4">Streamline your employee benefits, retirement plans, and corporate investment
+                        strategies with our institutional-grade tools.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#solutions" class="btn btn-warning btn-lg">Explore Solutions</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Sales</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        alt="Employer Solutions" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employer Solutions -->
+    <section id="solutions">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #1e1e1e;">Employer Solutions</h2>
+                <p class="lead">Tailored financial services designed for businesses of all sizes</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Retirement Plans -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-primary mb-4">
+                                <i class="bi bi-umbrella"></i>
+                            </div>
+                            <h3 class="mb-3">Retirement Plans</h3>
+                            <p class="mb-4">Comprehensive 401(k), 403(b), and pension plan solutions with competitive
+                                investment options and administrative support.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Custom plan
+                                    design</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Employee
+                                    education programs</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Compliance
+                                    management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Fiduciary
+                                    services</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Savings -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-success mb-4">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <h3 class="mb-3">Health Savings Accounts</h3>
+                            <p class="mb-4">Integrated HSA solutions that complement your high-deductible health plans
+                                and provide tax advantages.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Triple tax
+                                    advantages</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Investment
+                                    options</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Employee
+                                    contribution management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Digital tools
+                                    for employees</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equity Compensation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-warning mb-4">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h3 class="mb-3">Equity Compensation</h3>
+                            <p class="mb-4">Manage employee stock options, RSUs, and ESPPs with our comprehensive equity
+                                compensation platform.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i>Stock option
+                                    administration</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i>Restricted
+                                    stock units (RSUs)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i>Employee stock
+                                    purchase plans</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-warning me-2"></i>Tax
+                                    withholding services</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-warning w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Cash Management -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-info mb-4">
+                                <i class="bi bi-bank"></i>
+                            </div>
+                            <h3 class="mb-3">Corporate Cash Management</h3>
+                            <p class="mb-4">Optimize your corporate treasury with our institutional cash management
+                                solutions.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Money market
+                                    funds</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Short-term bond
+                                    portfolios</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Liquidity
+                                    management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Customized yield
+                                    strategies</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-info w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-purple mb-4">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h3 class="mb-3">Executive Services</h3>
+                            <p class="mb-4">Tailored wealth management solutions for your executive team and key
+                                employees.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-purple me-2"></i>Deferred
+                                    compensation plans</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-purple me-2"></i>Supplemental
+                                    executive retirement plans</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-purple me-2"></i>Personalized
+                                    investment strategies</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-purple me-2"></i>Tax
+                                    optimization</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-purple w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Succession -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="card-body p-4">
+                            <div class="solution-icon bg-teal mb-4">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h3 class="mb-3">Business Succession Planning</h3>
+                            <p class="mb-4">Strategies for smooth ownership transitions and business continuity
+                                planning.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i>Valuation
+                                    services</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i>Buy-sell
+                                    agreements</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i>ESOP
+                                    implementation</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-teal me-2"></i>Tax-efficient
+                                    transfer strategies</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-teal w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employer Resources -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color:#1e1e1e;">Employer Resources</h2>
+                <p class="lead">Tools and information to help you make informed decisions</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Resource 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-primary bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-file-earmark-pdf fs-3 me-3 text-primary"></i>
+                            <div>
+                                <h4 class="mb-1">401(k) Plan Benchmarking Report</h4>
+                                <small class="text-muted">Industry comparison data</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Compare your retirement plan features and costs against industry peers with our
+                                comprehensive benchmarking analysis.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> Updated: June 2023</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-success bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-play-btn fs-3 me-3 text-success"></i>
+                            <div>
+                                <h4 class="mb-1">HSA Implementation Webinar</h4>
+                                <small class="text-muted">Video guide</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Step-by-step guide to implementing a Health Savings Account program for your employees.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 45 min video</small>
+                                <a href="#" class="btn btn-sm btn-outline-success">Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-warning bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-calculator fs-3 me-3 text-warning"></i>
+                            <div>
+                                <h4 class="mb-1">Retirement Plan Cost Calculator</h4>
+                                <small class="text-muted">Interactive tool</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Estimate the costs of establishing and maintaining a retirement plan for your workforce.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> Interactive tool</small>
+                                <a href="#" class="btn btn-sm btn-outline-warning">Launch Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-info bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-newspaper fs-3 me-3 text-info"></i>
+                            <div>
+                                <h4 class="mb-1">SECURE 2.0 Act Guide</h4>
+                                <small class="text-muted">Compliance update</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Understand how the new retirement legislation affects your business and employee
+                                benefits.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> Updated: March 2023</small>
+                                <a href="#" class="btn btn-sm btn-outline-info">Read Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-purple bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-file-earmark-spreadsheet fs-3 me-3 text-purple"></i>
+                            <div>
+                                <h4 class="mb-1">Employee Benefits Survey</h4>
+                                <small class="text-muted">Template & analysis</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Customizable survey template to assess employee satisfaction with your benefits package.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> Excel template</small>
+                                <a href="#" class="btn btn-sm btn-outline-purple">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card h-100">
+                        <div class="card-header bg-teal bg-opacity-10 d-flex align-items-center">
+                            <i class="bi bi-patch-check fs-3 me-3 text-teal"></i>
+                            <div>
+                                <h4 class="mb-1">Fiduciary Compliance Checklist</h4>
+                                <small class="text-muted">Compliance tool</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Ensure your retirement plan meets all ERISA fiduciary requirements with our detailed
+                                checklist.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> PDF checklist</small>
+                                <a href="#" class="btn btn-sm btn-outline-teal">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-3">Contact Our Employer Solutions Team</h2>
+                                <p class="lead">Get personalized advice for your business needs</p>
+                            </div>
+                            <form id="employerContactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Company Name</label>
+                                        <input type="text" class="form-control" id="company" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="employees" class="form-label">Number of Employees</label>
+                                        <select class="form-select" id="employees" required>
+                                            <option value="">Select...</option>
+                                            <option value="1-10">1-10</option>
+                                            <option value="11-50">11-50</option>
+                                            <option value="51-200">51-200</option>
+                                            <option value="201-500">201-500</option>
+                                            <option value="501-1000">501-1000</option>
+                                            <option value="1001+">1001+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="interest" class="form-label">Interest Area</label>
+                                        <select class="form-select" id="interest" required>
+                                            <option value="">Select...</option>
+                                            <option value="retirement">Retirement Plans</option>
+                                            <option value="hsa">Health Savings Accounts</option>
+                                            <option value="equity">Equity Compensation</option>
+                                            <option value="cash">Corporate Cash Management</option>
+                                            <option value="executive">Executive Services</option>
+                                            <option value="succession">Business Succession</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">How Can We Help?</label>
+                                        <textarea class="form-control" id="message" rows="4"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="consent" required>
+                                            <label class="form-check-label" for="consent">
+                                                I agree to receive communications from Spearhead Research
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-warning w-100 py-3">Submit Request</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('employerContactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Here you would typically send the form data to your server
+            // For demonstration, we'll just show a success message
+            alert('Thank you for your inquiry! Our employer solutions team will contact you shortly.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

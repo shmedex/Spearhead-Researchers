@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Banking Industry Reports - Stock Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Main content styling */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-title {
+            font-size: 2.05rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul.feature-list {
+            padding-left: 20px;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .sector-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sector-performance {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .bank-icon {
+            color: #1a5276;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #e8f4fc;">Finance & Banking Sector Analysis</h1>
+                    <p class="lead mb-4">Comprehensive research on banks, financial services, payment processors, and
+                        fintech companies shaping the global financial landscape.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Placeholder for hero image or chart -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8 main-content">
+                <h1>Finance/Banking: The Basics of Investing in the Finance and Banking Industry</h1>
+
+                <div class="sector-box">
+                    <p class="sector-performance">Sector Performance: +12.4% YTD (In line with S&P 500)</p>
+                    <p>
+                        The finance and banking sector is a cornerstone of the global economy, providing essential
+                        services such as
+                        banking, lending, insurance, and investment management. For investors, the finance industry
+                        offers a blend of
+                        stability and growth, making it an attractive option for those seeking long-term gains or
+                        consistent dividends.
+                        Whether it’s traditional banking institutions, fintech startups, or insurance companies, the
+                        sector presents
+                        diverse opportunities for both conservative and risk-tolerant investors. In this post, we’ll
+                        break down the
+                        basics of investing in finance and banking, the key players, the potential benefits, and the
+                        risks involved.
+
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Why Invest in Finance and Banking?</div>
+                    <p>
+                        The finance industry is one of the most robust sectors in the economy, playing a critical role
+                        in facilitating transactions, managing wealth, and providing credit. Here's why the sector might
+                        appeal to investors:
+                    </p>
+                    <ul class="feature-list">
+                        <li><strong>Steady Earnings:</strong> Banks, insurance companies, and financial institutions
+                            generate consistent
+                            revenue streams through interest on loans, fees, and commissions. This steady income
+                            provides stability,
+                            especially in more established institutions.</li>
+                        <li><strong>Dividends:</strong> Many banks and financial institutions pay regular dividends to
+                            their shareholders,
+                            making them attractive for income-seeking investors. Large financial institutions, in
+                            particular, often offer
+                            substantial dividend yields, making them a good option for those looking for passive income.
+                        </li>
+                        <li><strong>Resilience: </strong> While finance can be cyclical, established banks and insurers
+                            tend to weather
+                            economic downturns better than other sectors. Their ability to manage risk, access capital,
+                            and adjust lending
+                            practices can provide resilience in challenging times.</li>
+                        <li><strong>Growth Potential in Fintech:</strong> The rise of financial technology (fintech) has
+                            introduced a new
+                            wave of innovation in the industry. From mobile payment systems to blockchain and digital
+                            lending, fintech
+                            companies offer higher growth potential for investors who are willing to take on more risk.
+                        </li>
+                        <li><strong>Economic Indicator:</strong> The health of the financial sector is often viewed as
+                            an indicator of
+                            broader economic stability. When the sector is thriving, it can signal strong economic
+                            growth, while challenges
+                            in the sector may point to broader economic issues.</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Key Sub-Sectors in Finance/Banking</div>
+                    <p>The finance and banking industry is diverse, with several sub-sectors offering different
+                        investment
+                        opportunities. Below are some of the key areas:</p>
+                    <ol class="feature-list">
+                        <li><strong>Commercial Banking</strong>
+                            <p>
+                                Commercial banks offer services like savings accounts, checking accounts, and loans to
+                                both consumers
+                                and businesses. Major banks, such as JPMorgan Chase, Bank of America, and Wells Fargo,
+                                dominate this
+                                space. They generate revenue primarily through interest on loans, mortgages, and service
+                                fees.
+                            </p>
+                            <ul>
+                                <li><strong>Revenue Streams:</strong> Interest income, fees, and trading profits.</li>
+                                <li><strong>Attractive Features:</strong> Stability, dividends, and resilience to
+                                    economic shifts.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Investment Banking</strong>
+                            <p>
+                                Investment banks, such as Goldman Sachs and Morgan Stanley, provide services like
+                                underwriting, mergers and
+                                acquisitions (M&A), and securities trading. They play a crucial role in capital markets,
+                                helping companies raise
+                                money through initial public offerings (IPOs), bond issuances, and advisory services.
+                            </p>
+                            <ul>
+                                <li><strong>Revenue Streams:</strong> Advisory fees, underwriting fees, trading profits,
+                                    and asset management
+                                    fees.</li>
+                                <li><strong>Attractive Features: </strong> Potential for high growth during strong
+                                    economic periods.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Insurance</strong>
+                            <p>
+                                The insurance sector includes companies that provide life insurance, property and
+                                casualty insurance, and health
+                                insurance. Firms like Allianz, Prudential, and AIG generate consistent revenue by
+                                collecting premiums and
+                                investing those funds in the market.
+                            </p>
+                            <ul>
+                                <li><strong>Revenue Streams:</strong> Premiums and investment income from reserves.</li>
+                                <li><strong>Attractive Features:</strong> Consistent cash flow, resilience in different
+                                    economic environments.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Asset Management</strong>
+                            <p>
+                                Asset management firms, such as BlackRock and Vanguard, manage the investments of
+                                individuals and institutions.
+                                They generate income by charging management fees based on the amount of assets under
+                                management (AUM).
+                            </p>
+                            <ul>
+                                <li><strong>Revenue Streams:</strong> Management fees, performance fees, and
+                                    commissions.</li>
+                                <li><strong>Attractive Features:</strong> Scalable business models, long-term growth.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Fintech (Financial Technology)</strong>
+                            <p>
+                                Fintech companies leverage technology to provide financial services like mobile
+                                payments, digital wallets, peer-to-peer lending, and blockchain solutions. Leading
+                                fintech firms include PayPal, Square (Block), and Stripe.
+                            </p>
+                            <ul>
+                                <li><strong>Revenue Streams:</strong> Transaction fees, subscription services, interest
+                                    on lending products.</li>
+                                <li><strong>Attractive Features:</strong> High growth potential, disruption of
+                                    traditional financial models.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">How to Invest in the Finance and Banking Sector</div>
+                    <p>
+                        There are several ways to invest in finance and banking, depending on your risk tolerance,
+                        investment strategy,
+                        and knowledge of the market. Below are the most common methods:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Individual Stocks</strong>
+                            <p>Investing in individual financial stocks allows you to target specific companies you
+                                believe will perform
+                                well.
+                                For example, you might invest in a large, stable bank like JPMorgan Chase for steady
+                                dividends, or a
+                                high-growth
+                                fintech company like PayPal for capital appreciation.</p>
+                            <ul>
+                                <li><strong>Advantages:</strong> Potential for high returns if you pick the right
+                                    companies; direct
+                                    exposure to
+                                    specific business models.</li>
+                                <li><strong>Risks: </strong> High volatility, especially with smaller banks or fintech
+                                    firms. Stock
+                                    prices may
+                                    fluctuate due to interest rate changes, regulatory risks, or economic downturns.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong> Financial Sector ETFs (Exchange-Traded Funds)</strong>
+                            <p>
+                                For investors seeking diversification, financial sector ETFs are a great option. These
+                                funds hold a basket of financial stocks, giving you exposure to a wide range of
+                                companies within the sector.
+                            </p>
+                            <ul>
+                                <li><strong>Advantages:</strong> Diversification reduces risk; lower fees compared to
+                                    mutual funds; easy to buy and sell on exchanges.</li>
+                                <li><strong>Risks:</strong> The performance of the entire sector can affect returns; you
+                                    may not see the high returns of individual stocks.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mutual Funds</strong>
+                            <p>Financial sector mutual funds are actively managed by professionals who select a
+                                portfolio of stocks based on
+                                research and market trends. These funds may focus on specific areas like commercial
+                                banking, insurance, or
+                                fintech.</p>
+                            <ul>
+                                <li><strong>Advantages: </strong> Professional management and diversification; ideal for
+                                    long-term investors.
+                                </li>
+                                <li><strong>Risks:</strong> Higher fees compared to ETFs; performance is reliant on the
+                                    fund manager’s
+                                    decisions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Index Funds</strong>
+                            <p>
+                                Investing in index funds that track financial indices is another way to gain broad
+                                exposure to the sector. Index
+                                funds are passively managed and aim to replicate the performance of their underlying
+                                index.
+                            </p>
+                            <ul>
+                                <li><strong>Advantages:</strong> Low fees, long-term growth potential, and hands-off
+                                    management.</li>
+                                <li><strong>Risks:</strong> Lack of flexibility and the possibility of underperformance
+                                    during market downturns.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Key Drivers and Trends in Finance and Banking</div>
+                    <p>
+                        When investing in the finance and banking sector, it’s crucial to understand the factors that
+                        drive performance. Below are some key drivers and trends shaping the industry:
+                    </p>
+                    <ol class="feature-list">
+
+                        <li><strong>Interest Rates</strong>
+                            <p>
+                                Interest rates play a significant role in the profitability of banks and financial
+                                institutions. Higher interest rates typically increase the interest spread, allowing
+                                banks to make more profit on loans. However, they can also reduce borrowing demand and
+                                affect economic growth.
+                            </p>
+                        </li>
+                        <li><strong>Regulation</strong>
+                            <p>
+                                Financial institutions are heavily regulated by governments to ensure stability and
+                                protect consumers. Changes
+                                in
+                                regulations, such as new capital requirements or lending restrictions, can impact
+                                profitability. Investors
+                                should
+                                keep an eye on potential regulatory changes that could affect the industry.
+                            </p>
+                        </li>
+                        <li><strong>Digital Transformation</strong>
+                            <p>
+                                The rapid adoption of digital banking and financial services is reshaping the industry.
+                                From online banking to
+                                digital wallets and blockchain, fintech is driving innovation, increasing efficiency,
+                                and improving customer
+                                experiences. Established banks are investing heavily in technology to keep up with these
+                                changes, while fintech
+                                startups are disrupting traditional models.
+                            </p>
+                        </li>
+                        <li><strong>Economic Growth</strong>
+                            <p>
+                                The performance of the finance and banking sector is closely tied to overall economic
+                                growth. During periods of
+                                strong economic growth, lending activity increases, and banks benefit from higher demand
+                                for credit and
+                                investment products. Conversely, during recessions, loan defaults may rise, and
+                                profitability can decline.
+                            </p>
+                        </li>
+                        <li><strong>Mergers and Acquisitions</strong>
+                            <p>
+                                Mergers and acquisitions (M&A) are common in the finance sector, especially among banks
+                                and fintech companies.
+                                M&A activity can create opportunities for investors, as larger institutions acquire
+                                smaller players to expand
+                                their reach, improve technology, or gain new market share.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Risks of Investing in Finance/Banking</div>
+                    <p>
+                        While the finance and banking sector offers several benefits, there are also risks involved:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Cyclicality:</strong> The sector is cyclical and tends to perform well in periods of
+                            economic growth
+                            but may struggle during recessions. Credit losses and reduced lending can hurt profitability
+                            during economic
+                            downturns.</li>
+                        <li><strong>Regulatory Risks:</strong> Financial institutions are subject to strict regulations.
+                            Changes in
+                            government policies, capital requirements, or lending restrictions can negatively affect
+                            profitability and
+                            shareholder returns.</li>
+                        <li><strong>Interest Rate Sensitivity:</strong> Financial stocks, especially banks, are highly
+                            sensitive to
+                            changes in interest rates. If central banks lower rates to stimulate the economy, it can
+                            compress profit
+                            margins for banks.</li>
+                        <li><strong>Competition:</strong> The rise of fintech companies has introduced new competition
+                            to traditional
+                            banks and financial institutions. As more consumers move to digital banking and mobile
+                            payments, established
+                            players may need to innovate rapidly to stay relevant.</li>
+                    </ol>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Final Thoughts</h2>
+                    <p>Investing in the finance and banking sector offers a unique combination of stability, income, and
+                        growth. Whether you’re interested in large, stable banks or innovative fintech companies, there
+                        are opportunities to suit a range of investment strategies. However, like all investments, it’s
+                        essential to understand the risks and trends shaping the sector.
+                    </p>
+                    <p>
+                        By staying informed about key drivers like interest rates, regulation, and digital
+                        transformation, investors can make well-informed decisions and capitalize on the long.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 80px;">
+                    <!-- Banking Sector News -->
+                    <div class="card shadow-sm rounded-4 mb-4 border-0">
+                        <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-bank me-2"></i>Banking Sector News
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fed Stress Tests Show Banks Can
+                                        Withstand Severe Recession</a></h6>
+                                <small class="text-muted">5 hours ago | Financial Times</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Reports Record
+                                        Investment Banking Fees</a></h6>
+                                <small class="text-muted">8 hours ago | Bloomberg</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fintech Partnerships Accelerate
+                                        Among Regional Banks</a></h6>
+                                <small class="text-muted">Yesterday | WSJ</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Basel III Endgame Rules to
+                                        Reshape Bank Capital Requirements</a></h6>
+                                <small class="text-muted">Yesterday | CNBC</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Earnings Calendar -->
+                    <div class="card shadow-sm rounded-4 border-0">
+                        <div class="card-header bg-success text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-cash-stack me-2"></i>Financial Earnings Calendar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Chase (JPM) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 14, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Goldman Sachs (GS) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 16, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Visa (V) Fiscal Q3 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 18, 2025</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">American Express (AXP) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 20, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Sector Performance -->
+                    <div class="card shadow-sm rounded-4 mt-4 border-0">
+                        <div class="card-header bg-info text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-graph-up me-2"></i>Sector Performance
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Financial Select Sector (XLF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+12.4%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 12.4%"
+                                        aria-valuenow="12.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Regional Banks (KRE)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+8.2%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 8.2%"
+                                        aria-valuenow="8.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>Fintech (ARKF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+22.7%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 22.7%"
+                                        aria-valuenow="22.7" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

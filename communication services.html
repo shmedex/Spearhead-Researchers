@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Services Sector Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Main content styling */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-title {
+            font-size: 2.05rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul.feature-list {
+            padding-left: 20px;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .sector-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sector-performance {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .communication-icon {
+            color: #3498db;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #e8f4fc;">Communication Services: Investing in the
+                        Digital Connection Economy</h1>
+                    <p class="lead mb-4">
+                        The communication services sector encompasses companies that facilitate information exchange and
+                        entertainment, including telecom providers, media giants, and digital platforms. As digital
+                        transformation accelerates globally, this sector offers investors exposure to essential
+                        connectivity and evolving content consumption trends. This guide explores how to invest in
+                        communication services, the sector's unique characteristics, and strategies for capitalizing on
+                        the digital revolution.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Placeholder for hero image or chart -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8 main-content">
+                <h1>Why Invest in Communication Services? </h1>
+                <p>
+                    The communication services sector presents compelling investment opportunities:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Essential Infrastructure:</strong> Digital connectivity has become as fundamental as
+                        utilities for modern economies.</li>
+                    <li><strong>Exponential Data Growth:</strong> Increasing data consumption drives demand for networks
+                        and content.</li>
+                    <li><strong>Advertising Shift:</strong> Digital platforms continue capturing advertising dollars
+                        from traditional media.</li>
+                    <li><strong>Global Reach:</strong> Many companies operate internationally with scalable business
+                        models.</li>
+                    <li><strong>Innovation Potential:</strong> Emerging technologies like 5G, AR/VR, and AI create new
+                        opportunities.</li>
+                </ul>
+
+                <div class="step">
+                    <div class="step-title">Key Communication Services Industries</div>
+                    <p>
+                        The sector includes these major categories:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Telecommunications</strong>
+                            <p>
+                                Providers of connectivity infrastructure and services.
+                            </p>
+                            <ul>
+                                <li><strong>Wireless Carriers:</strong> Verizon, T-Mobile, AT&T (mobile networks and 5G
+                                    rollout)</li>
+                                <li><strong>Fixed-Line Providers:</strong> Comcast, Charter (broadband and cable
+                                    services)</li>
+                                <li><strong>Tower Companies:</strong> American Tower, Crown Castle (wireless
+                                    infrastructure)</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Media & Entertainment</strong>
+                            <p>
+                                Creators and distributors of content.
+                            </p>
+                            <ul>
+                                <li><strong>Streaming Platforms:</strong> Netflix, Disney+, Warner Bros Discovery
+                                    (direct-to-consumer content)</li>
+                                <li><strong>Traditional Media:</strong> Paramount Global, Fox Corporation (linear TV and
+                                    film)</li>
+                                <li><strong>Gaming:</strong> Electronic Arts, Activision Blizzard (interactive
+                                    entertainment)</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Interactive Platforms</strong>
+                            <p>
+                                Digital services facilitating communication and content sharing.
+                            </p>
+                            <ul>
+                                <li><strong>Social Networks:</strong> Meta (Facebook, Instagram), Snap, Pinterest</li>
+                                <li><strong>Search & Digital Ads:</strong> Alphabet (Google), Baidu (online marketing
+                                    platforms)</li>
+                                <li><strong>User-Generated Content:</strong> YouTube (Google), TikTok (Bytedance)</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Communication Technology</strong>
+                            <p>
+                                Enablers of digital communication infrastructure.
+                            </p>
+                            <ul>
+                                <li><strong>Network Equipment:</strong> Cisco, Nokia, Ericsson (5G and networking
+                                    hardware)</li>
+                                <li><strong>Cloud Communications:</strong> Zoom, Twilio (enterprise communication tools)
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Emerging Digital Services</strong>
+                            <p>
+                                New models of digital interaction and monetization.
+                            </p>
+                            <ul>
+                                <li><strong>Metaverse Platforms:</strong> Meta, Roblox (next-gen digital experiences)
+                                </li>
+                                <li><strong>Digital Marketplaces:</strong> Fiverr, Upwork (online service platforms)
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Investment Benefits</div>
+                    <ol class="feature-list">
+                        <li><strong>Structural Growth:</strong> Increasing global internet penetration and digital
+                            adoption.</li>
+                        <li><strong>Recurring Revenue:</strong> Many business models feature subscription-based income.
+                        </li>
+                        <li><strong>Network Effects:</strong> Leading platforms become more valuable as more users join.
+                        </li>
+                        <li><strong>High Margins:</strong> Digital services often have scalable, high-margin business
+                            models.</li>
+                        <li><strong>Innovation Potential:</strong> Continuous technological evolution creates new
+                            opportunities.</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Key Risks to Consider</div>
+                    <p>
+                        While offering growth potential, the sector carries specific risks:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Regulatory Scrutiny:</strong> Facing increasing antitrust and content moderation
+                            pressures.</li>
+                        <li><strong>Technological Disruption:</strong> Rapid changes can quickly make business models
+                            obsolete.</li>
+                        <li><strong>Competition:</strong> Low barriers to entry in some digital segments lead to intense
+                            rivalry.</li>
+                        <li><strong>Privacy Concerns:</strong> Changing data regulations impact targeted advertising
+                            models.</li>
+                        <li><strong>Capital Intensity:</strong> Telecom infrastructure requires significant ongoing
+                            investment.</li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Investment Strategies</div>
+                    <p>
+                        Approaches for investing in communication services:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Infrastructure Focus:</strong> Invest in companies building essential connectivity
+                            (5G, broadband).</li>
+                        <li><strong>Content Leaders:</strong> Target companies with strong intellectual property and
+                            franchises.</li>
+                        <li><strong>Platform Dominance:</strong> Focus on networks with strong user engagement and
+                            retention.</li>
+                        <li><strong>Digital Transformation:</strong> Identify traditional companies successfully
+                            transitioning online.</li>
+                        <li><strong>Sector ETFs:</strong> Consider broad exposure through funds like XLC or VOX.</li>
+                    </ol>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        The communication services sector offers investors exposure to the digital transformation
+                        reshaping how we connect, consume content, and conduct business. While the sector includes both
+                        stable utilities-like telecom providers and high-growth digital platforms, all segments benefit
+                        from the secular trend toward increased connectivity and digital content consumption.
+                    </p>
+                    <p>
+                        Successful investing in this sector requires understanding technological trends, regulatory
+                        environments, and shifting consumer behaviors. A balanced approach combining infrastructure
+                        plays with content and platform leaders can help investors capture the sector's growth while
+                        managing its inherent volatility.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 80px;">
+                    <!-- Communication Services News -->
+                    <div class="card shadow-sm rounded-4 mb-4 border-0">
+                        <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-megaphone me-2"></i>Communication Services News
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">5G Adoption Reaches 40% of Mobile
+                                        Users in Developed Markets</a></h6>
+                                <small class="text-muted">3 hours ago | Telecom Today</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Streaming Services Face
+                                        Profitability Challenges Despite Subscriber Growth</a></h6>
+                                <small class="text-muted">6 hours ago | Media Insights</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">FTC Proposes New Data Privacy
+                                        Rules for Social Media Platforms</a></h6>
+                                <small class="text-muted">Yesterday | Tech Policy Watch</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Digital Advertising Market
+                                        Expected to Grow 12% in 2025</a></h6>
+                                <small class="text-muted">Yesterday | AdWeek</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings Calendar -->
+                    <div class="card shadow-sm rounded-4 border-0">
+                        <div class="card-header bg-success text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-cash-stack me-2"></i>Earnings Calendar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Netflix (NFLX) Q2 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 27, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Alphabet (GOOGL) Q2 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 29, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Meta (META) Q2 Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 31, 2025</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Verizon (VZ) Q2 Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> August 2, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sector Performance -->
+                    <div class="card shadow-sm rounded-4 mt-4 border-0">
+                        <div class="card-header bg-info text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-graph-up me-2"></i>Sector Performance
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Communication Services (XLC)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+21.4%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 21.4%"
+                                        aria-valuenow="21.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Social Media (SOCL)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+24.7%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 24.7%"
+                                        aria-valuenow="24.7" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>5G & Telecom (FIVG)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+18.2%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 18.2%"
+                                        aria-valuenow="18.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

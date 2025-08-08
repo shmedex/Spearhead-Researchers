@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Industry Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--boostrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Main content styling */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .step-title {
+            font-size: 2.05rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul.feature-list {
+            padding-left: 20px;
+        }
+
+        ul.feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .sector-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sector-performance {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .bank-icon {
+            color: #1a5276;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span><i class="bi bi-envelope me-2"></i>info@spearheadresearch.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="index.html" class="me-3"></i>Home</a>
+                    <a href="#about" class="me-3"> About Us</a>
+                    <a href="#contact" class="me-3">Contact Us</a>
+                    <a href="login.html" class="me-3">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-3.png" height="40" class="d-inline-block align-top me-2">
+                Spearhead Researchers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Finance 101 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="financeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cash-stack me-1"></i> Finance 101
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="financeDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="how to invest.html"><i
+                                        class="bi bi-graph-up me-2"></i>How to Invest</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="stocks.html"><i
+                                        class="bi bi-bar-chart-line me-2"></i>Stocks</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="bonds.html"><i
+                                        class="bi bi-safe me-2"></i>Bonds</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="funds.html"><i
+                                        class="bi bi-collection me-2"></i>Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industry Reports Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="industryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-building me-1"></i> Industry Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end p-0"
+                            aria-labelledby="industryDropdown">
+                            <div class="row g-0">
+                                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                                <li><a class="dropdown-item" href="finance-banking.html">Finance & Banking</a></li>
+                                <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
+                                <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                                <li><a class="dropdown-item" href="material.html">Materials</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrials</a></li>
+                                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                                <li><a class="dropdown-item" href="healthcare.html">HealthCare</a></li>
+                                <li><a class="dropdown-item" href="Consumer Discretionary.html">Consumer
+                                        Discretionary</a></li>
+                                <li><a class="dropdown-item" href="consumer staples.html">Consumer Staples</a></li>
+                                <li><a class="dropdown-item" href="communication services.html">Communication
+                                        Services</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Research Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="stockDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-file-earmark-text me-1"></i> Stock Research
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="stockDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"><i
+                                        class="bi bi-star-fill me-2"></i>Spearhead's Latest Research</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Wealth Planning Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="wealthDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-piggy-bank me-1"></i> Wealth Planning
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"
+                            aria-labelledby="wealthDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="personal-finance.html"><i
+                                        class="bi bi-person-lines-fill me-2"></i>Personal Finance</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="employer-accounts.html"><i
+                                        class="bi bi-briefcase me-2"></i>Employer Accounts</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="retirement-planning.html"><i
+                                        class="bi bi-umbrella me-2"></i>Retirement Planning</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="family-planning.html"><i
+                                        class="bi bi-people-fill me-2"></i>Family Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets Link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="market.html">
+                            <i class="bi bi-globe2 me-1"></i> Markets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #e8f4fc;">Real Estate: The Basics of Investing in
+                        the Real Estate Industry</h1>
+                    <p class="lead mb-4">
+                        Real estate is one of the oldest and most well-known forms of investment, and it continues to be
+                        a popular choice for both novice and seasoned investors. Whether you’re buying a home, investing
+                        in rental properties, or purchasing shares in real estate investment trusts (REITs), real estate
+                        offers a tangible, often stable, way to grow wealth. In this post, we’ll cover the basics of
+                        investing in real estate, the various types of real estate investments, the benefits, and the
+                        risks involved.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <!-- Placeholder for hero image or chart -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Main Section -->
+            <div class="col-lg-8 main-content">
+                <h1>Why Invest in Real Estate? </h1>
+                <p>
+                    Investing in real estate offers several key advantages that make it an attractive option for
+                    diversifying your investment portfolio:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Steady Cash Flow:</strong> Real estate can provide a steady stream of income,
+                        particularly through rental properties. This can be a reliable source of passive income if
+                        managed correctly.</li>
+                    <li><strong>Appreciation:</strong> Over time, real estate tends to increase in value. Historically,
+                        property values rise as markets develop and demand grows, allowing investors to sell for a
+                        profit down the line.</li>
+                    <li><strong>Diversification:</strong> Real estate offers diversification from traditional assets
+                        like stocks and bonds. Because real estate often moves independently from the stock market, it
+                        can help reduce the overall risk in a diversified portfolio. </li>
+                    <li><strong>Tax Benefits:</strong> Real estate investors can benefit from various tax deductions,
+                        including mortgage interest, property taxes, and depreciation on rental properties, which can
+                        reduce taxable income.</li>
+                    <li><strong>Leverage:</strong> Real estate allows investors to use leverage, meaning you can buy
+                        property with a relatively small amount of your own money and control a much larger asset.</li>
+                    <li><strong>Hedge Against Inflation:</strong> Real estate values and rents tend to rise along with
+                        inflation, which can help protect your purchasing power over time.</li>
+                </ul>
+
+
+                <div class="step">
+                    <div class="step-title">Types of Real Estate Investments</div>
+                    <p>
+                        There are various ways to invest in real estate, each offering different levels of risk, return,
+                        and
+                        involvement. Here are the most common types of real estate investments:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Residential Properties</strong>
+                            <p>
+                                Investing in residential real estate involves purchasing homes, apartments, or condos
+                                that people live
+                                in. These properties can be rented out to tenants, generating rental income, or flipped
+                                for a profit after
+                                renovations.
+                            </p>
+                            <ul>
+                                <li><strong>Buy-and-Hold Rental Properties:</strong> This involves purchasing properties
+                                    to rent out for
+                                    monthly income. You own the property and collect rent from tenants while potentially
+                                    benefiting from
+                                    property appreciation over time.
+                                </li>
+                                <li><strong>House Flipping:</strong> Involves buying homes that need repairs or
+                                    upgrades, fixing them
+                                    up, and then selling them for a profit. Flipping is riskier than holding rental
+                                    properties because the
+                                    success of the investment is dependent on selling the property for more than the
+                                    cost of purchase and
+                                    renovations.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Commercial Real Estate</strong>
+                            <p>
+                                Commercial real estate involves properties that are used for business purposes, such as
+                                office
+                                buildings, retail spaces, warehouses, and industrial buildings. These properties are
+                                typically leased to
+                                companies or retailers.
+                            </p>
+                            <ul>
+                                <li><strong>Office Spaces and Retail:</strong> Large corporations, small businesses, or
+                                    retailers rent
+                                    office buildings and retail stores, which can provide long-term, high-value lease
+                                    agreements.
+                                </li>
+                                <li><strong>Industrial Real Estate:</strong> Warehouses, manufacturing facilities, and
+                                    storage spaces
+                                    fall under this category. Industrial real estate often has stable tenants and
+                                    longer-term leases.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Real Estate Investment Trusts (REITs)</strong>
+                            <p>
+                                A REIT is a company that owns, operates, or finances income-producing real estate. REITs
+                                are publicly
+                                traded on stock exchanges, making them a liquid, low-barrier way for investors to get
+                                exposure to real
+                                estate without having to directly buy or manage properties.
+                            </p>
+                            <ul>
+                                <li><strong>Equity REITs:</strong> Own and operate income-generating real estate, such
+                                    as apartment
+                                    buildings, malls, or hotels.
+                                </li>
+                                <li><strong>Mortgage REITs:</strong> Provide financing for income-producing real estate
+                                    by purchasing or
+                                    originating mortgages and mortgage-backed securities.
+                                </li>
+                                <li><strong>Hybrid REITs:</strong> Combine equity and mortgage investments, offering a
+                                    blend of property
+                                    ownership and mortgage lending.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Real Estate Crowdfunding</strong>
+                            <p>
+                                Real estate crowdfunding platforms allow investors to pool their money together to
+                                invest in real estate
+                                projects that would typically be out of reach for an individual investor. These
+                                platforms often focus on
+                                both residential and commercial developments, and investments can be made with smaller
+                                amounts of
+                                capital than is needed for direct ownership.
+                            </p>
+                        </li>
+
+                        <li><strong>Real Estate Mutual Funds and ETFs</strong>
+                            <p>
+                                Investing in real estate-focused mutual funds or ETFs (Exchange-Traded Funds) allows
+                                investors to gain
+                                exposure to the real estate market without buying physical properties. These funds
+                                invest in a variety
+                                of real estate-related assets, including REITs and real estate companies.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <div class="step">
+                    <div class="step-title"> How to Invest in Real Estate</div>
+                    <p>
+                        There are different ways to get started with real estate investing, depending on your financial
+                        goals, risk
+                        tolerance, and capital. Here’s how you can begin:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Direct Ownership</strong>
+                            <p>
+                                Buying a residential or commercial property directly is the most hands-on approach to
+                                real estate
+                                investing. To do this, you’ll need sufficient capital for a down payment (typically
+                                20-30% of the
+                                property value for investment properties), access to financing, and a plan for managing
+                                the property.
+                            </p>
+                            <ul>
+                                <li><strong>Pros</strong> Potential for higher returns, control over the property,
+                                    long-term
+                                    appreciation.</li>
+                                <li><strong>Cons</strong> Requires significant capital, time, and effort for property
+                                    management, and
+                                    carries risks like vacancies or tenant issues. </li>
+                            </ul>
+                        </li>
+                        <li><strong>REITs</strong>
+                            <p>
+                                For those who want to invest in real estate without the responsibilities of property
+                                ownership, REITs
+                                are a good option. REITs allow you to invest in real estate without the need for large
+                                amounts of
+                                capital or management involvement. You can buy and sell REITs just like stocks on major
+                                exchanges.
+                            </p>
+                            <ul>
+                                <li><strong>Pros:</strong> Liquidity, diversification, professional management, and
+                                    lower barriers to
+                                    entry.</li>
+                                <li><strong>Cons:</strong> Limited control over the investments, and REITs can be
+                                    sensitive to interest
+                                    rates and market conditions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Real Estate Crowdfunding</strong>
+                            <p>
+                                Crowdfunding platforms like Fundrise or RealtyMogul let investors pool their money to
+                                invest in larger
+                                real estate deals. Many platforms offer access to both residential and commercial
+                                properties, often with
+                                lower minimum investments than direct property ownership.
+                            </p>
+                            <ul>
+                                <li><strong>Pros:</strong> Access to high-quality real estate deals with lower capital
+                                    requirements,
+                                    potential for high returns.</li>
+                                <li><strong>Cons</strong> Less liquidity than REITs, as your money may be tied up for
+                                    years, and there’s
+                                    risk of project failure or low returns.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Real Estate Mutual Funds and ETFs</strong>
+                            <p>
+                                For investors looking for a more diversified and liquid way to gain exposure to real
+                                estate, mutual
+                                funds and ETFs focused on real estate are excellent choices. These funds typically
+                                invest in REITs and
+                                real estate companies, offering broad exposure to the sector.
+                            </p>
+                            <ul>
+                                <li> Diversification, professional management, and liquidity.</li>
+                                <li> Indirect exposure to real estate, and performance is tied to the stock market and
+                                    fund management.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Key Benefits of Real Estate Investing</div>
+                    <ol class="feature-list">
+
+                        <li><strong>Tangible Asset:</strong>
+                            <p>
+                                Real estate is a physical, tangible asset that tends to hold value over time, unlike
+                                some more volatile investments.
+                            </p>
+                        </li>
+                        <li><strong>Income Generation:</strong>
+                            <p>
+                                Rental properties provide consistent income, especially in markets with strong demand.
+                            </p>
+                        </li>
+                        <li><strong>Appreciation Potential:</strong>
+                            <p>
+                                Real estate has a long history of appreciating in value, providing capital growth in
+                                addition to rental income.
+                            </p>
+                        </li>
+                        <li><strong>Economic Growth</strong>
+                            <p>
+                                The performance of the finance and banking sector is closely tied to overall economic
+                                growth. During periods of
+                                strong economic growth, lending activity increases, and banks benefit from higher demand
+                                for credit and
+                                investment products. Conversely, during recessions, loan defaults may rise, and
+                                profitability can decline.
+                            </p>
+                        </li>
+                        <li><strong>Leverage Opportunities:</strong>
+                            <p>
+                                Real estate allows investors to use leverage, where a relatively small amount of money
+                                can control a much larger asset through mortgage financing.
+                            </p>
+                        </li>
+                        <li><strong>Tax Advantages:</strong>
+                            <p>
+                                Investors can deduct expenses like mortgage interest, property taxes, repairs, and
+                                depreciation from their taxes, reducing the cost of ownership.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Risks of Investing in Real Estate</div>
+                    <p>
+                        While real estate offers many benefits, it’s important to understand the risks involved:
+                    </p>
+                    <ol class="feature-list">
+                        <li><strong>Market Cycles:</strong>Real estate markets can be cyclical, with periods of rapid
+                            appreciation
+                            followed by downturns. An economic recession can lead to lower property values or longer
+                            vacancy periods.
+                        </li>
+                        <li><strong>Liquidity:</strong> Unlike stocks or bonds, real estate is not a liquid asset. It
+                            can take months
+                            (or even longer) to sell a property, especially in a weak market.</li>
+                        <li><strong>High Costs:</strong> Buying and maintaining real estate can be expensive. In
+                            addition to the initial
+                            down payment, you may need to cover ongoing costs like maintenance, property management,
+                            taxes, and
+                            insurance.</li>
+                        <li><strong>Management Issues:</strong> Owning and managing rental properties can be
+                            time-consuming and
+                            stressful, particularly if tenants default on rent, damage the property.</li>
+                        <li><strong>Interest Rate Sensitivity:</strong> Real estate investments, especially REITs and
+                            properties with
+                            mortgages, can be sensitive to interest rate changes. Rising interest rates can increase
+                            borrowing costs and
+                            reduce affordability for potential buyers. </li>
+                    </ol>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        Investing in real estate can be an excellent way to build wealth, generate passive income, and
+                        diversify your portfolio. Whether you’re interested in buying a rental property, investing in
+                        REITs, or exploring real estate crowdfunding, there are plenty of opportunities in this diverse
+                        sector. As with any investment, it’s important to do your research, understand the market, and
+                        evaluate your own financial situation and risk tolerance before diving in. By making informed
+                        decisions, you can enjoy the many benefits that real estate investing has to offer.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sticky-top" style="top: 80px;">
+                    <!-- Banking Sector News -->
+                    <div class="card shadow-sm rounded-4 mb-4 border-0">
+                        <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-bank me-2"></i>Banking Sector News
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fed Stress Tests Show Banks Can
+                                        Withstand Severe Recession</a></h6>
+                                <small class="text-muted">5 hours ago | Financial Times</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Reports Record
+                                        Investment Banking Fees</a></h6>
+                                <small class="text-muted">8 hours ago | Bloomberg</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Fintech Partnerships Accelerate
+                                        Among Regional Banks</a></h6>
+                                <small class="text-muted">Yesterday | WSJ</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">Basel III Endgame Rules to
+                                        Reshape Bank Capital Requirements</a></h6>
+                                <small class="text-muted">Yesterday | CNBC</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Earnings Calendar -->
+                    <div class="card shadow-sm rounded-4 border-0">
+                        <div class="card-header bg-success text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-cash-stack me-2"></i>Financial Earnings Calendar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="news-item px-4 pt-4 pb-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">JPMorgan Chase (JPM) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 14, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Goldman Sachs (GS) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 16, 2025</small>
+                            </div>
+                            <div class="news-item px-4 py-2 border-bottom">
+                                <h6><a href="#" class="text-decoration-none text-dark">Visa (V) Fiscal Q3 Earnings</a>
+                                </h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 18, 2025</small>
+                            </div>
+                            <div class="news-item px-4 pt-2 pb-4">
+                                <h6><a href="#" class="text-decoration-none text-dark">American Express (AXP) Q2
+                                        Earnings</a></h6>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> July 20, 2025</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Sector Performance -->
+                    <div class="card shadow-sm rounded-4 mt-4 border-0">
+                        <div class="card-header bg-info text-white fw-semibold rounded-top-4">
+                            <i class="bi bi-graph-up me-2"></i>Sector Performance
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Financial Select Sector (XLF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+12.4%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 12.4%"
+                                        aria-valuenow="12.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Regional Banks (KRE)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+8.2%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 8.2%"
+                                        aria-valuenow="8.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>Fintech (ARKF)</h6>
+                                <div class="d-flex justify-content-between">
+                                    <small>YTD Return</small>
+                                    <span class="text-success">+22.7%</span>
+                                </div>
+                                <div class="progress mt-1" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 22.7%"
+                                        aria-valuenow="22.7" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4"><i class="bi bi-graph-up me-2"></i>Spearhead Research</h3>
+                    <p>Providing institutional-quality market research and analytics to investors of all sizes since
+                        2015.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.instagram.com/spearheadresearchers/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/spearhead-researchers-a526b7379/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579374352523"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- Finance 101 -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Finance 101</h5>
+                        <ul>
+                            <li><a href="how to invest.html">How to Invest</a></li>
+                            <li><a href="stocks.html">Stocks</a></li>
+                            <li><a href="bonds.html">Bonds</a></li>
+                            <li><a href="funds.html">Funds</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Industry Reports -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Industry Reports</h5>
+                        <ul>
+                            <li><a href="tech.html">Technology</a></li>
+                            <li><a href="finance-banking.html">Finance & Banking</a></li>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="energy.html">Energy</a></li>
+                            <li><a href="material.html">Materials</a></li>
+                            <li><a href="industrial.html">Industrials</a></li>
+                            <li><a href="utilities.html">Utilities</a></li>
+                            <li><a href="healthcare.html">HealthCare</a></li>
+                            <li><a href="Consumer Discretionary.html">Consumer Discretionary</a></li>
+                            <li><a href="consumer staples.html">Consumer Staples</a></li>
+                            <li><a href="communication services.html">Communication Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Stock Research -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Stock Research</h5>
+                        <ul>
+                            <li><a href="#">Spearhead's Latest Research</a></li>
+                            <li><a href="market.html">Market Overview</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wealth Planning -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Wealth Planning</h5>
+                        <ul>
+                            <li><a href="personal-finance.html">Personal Finance</a></li>
+                            <li><a href="employer-accounts.html">Employer Accounts</a></li>
+                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
+                            <li><a href="family-planning.html">Family Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2025 Spearhead Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
